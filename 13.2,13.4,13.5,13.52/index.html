@@ -1,127 +1,29 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>JooStore • PS4 Host</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JooStore GoldHEN Host</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="ambient ambient-a"></div>
-<div class="ambient ambient-b"></div>
-
-<main class="shell">
-
-  <header class="topbar">
-    <div class="brand">
-      <div class="brand-mark">J</div>
-      <div>
-        <div class="brand-name">JooStore</div>
-        <div class="brand-sub">PS4 HOST • PREMIUM EDITION</div>
-      </div>
-    </div>
-
-    <div class="status">
-      <span class="status-dot"></span>
-      <span>ONLINE HOST</span>
-    </div>
+<div class="bg"></div>
+<main class="wrap">
+  <header>
+    <div class="brand">JooStore <span>GOLDHEN HOST</span></div>
+    <div class="sub">PS4 Host • GoldHEN Edition</div>
   </header>
-
   <section class="hero">
-    <div class="hero-copy">
-      <div class="eyebrow">PLAYSTATION 4</div>
-      <h1 id="msgs">JooStore Host</h1>
-      <p id="msgs2">صلي على حبيبك النبي ﷺ</p>
-      <p class="hint">اختار إصدار جهازك للدخول إلى الهوست المناسب</p>
-    </div>
+    <img src="img.jpg" alt="JooStore GoldHEN Host">
+    <div class="overlay"><div class="arabic">صلي على حبيبك النبي ﷺ</div><h1>JooStore</h1><p>GoldHEN Host</p></div>
   </section>
-
-  <section class="firmware-title">
-    <div>
-      <span class="line"></span>
-      <span>اختار الـ Firmware</span>
-    </div>
-    <span class="small-note">JooStore • Fast &amp; Clean</span>
+  <section class="grid">
+    <a class="card" href="505goldhen/index.html"><b>5.05</b><span>GoldHEN</span></a>
+    <a class="card" href="672goldhen/index.html"><b>6.72</b><span>GoldHEN</span></a>
+    <a class="card" href="900goldhen/index.html"><b>9.00</b><span>GoldHEN</span></a>
+    <a class="card wide" href="13.2,13.4,13.5,13.52/index.html"><b>13.02 — 13.52</b><span>GoldHEN</span></a>
   </section>
-
-  <section class="cards" id="menu">
-
-    <button class="card card-blue"
-      onmouseenter="setMsg('PS4 5.05 • Host','JooStore 5.05 Host')"
-      onmouseleave="resetMsg()"
-      onclick="location.href='505goldhen/index.html'">
-      <span class="version">5.05</span>
-      <span class="card-title">GoldHEN Host</span>
-      <span class="card-desc">Firmware 5.05</span>
-      <span class="arrow">‹</span>
-    </button>
-
-    <button class="card card-blue"
-      onmouseenter="setMsg('PS4 6.72 • GoldHEN','JooStore 6.72 GoldHEN')"
-      onmouseleave="resetMsg()"
-      onclick="location.href='672goldhen/index.html'">
-      <span class="version">6.72</span>
-      <span class="card-title">GoldHEN Host</span>
-      <span class="card-desc">Firmware 6.72</span>
-      <span class="arrow">‹</span>
-    </button>
-
-    <button class="card card-gold"
-      onmouseenter="setMsg('PS4 7.00 → 13.00 • GoldHEN','JooStore GoldHEN Host')"
-      onmouseleave="resetMsg()"
-      onclick="location.href='g2all/index.html'">
-      <span class="badge">MAIN</span>
-      <span class="version">7.00 — 13.00</span>
-      <span class="card-title">GoldHEN Host</span>
-      <span class="card-desc">Multi Firmware</span>
-      <span class="arrow">‹</span>
-    </button>
-
-    <button class="card card-blue"
-      onmouseenter="setMsg('PS4 13.20 — 13.52 • Host','JooStore 13.x Host')"
-      onmouseleave="resetMsg()"
-      onclick="location.href='13.2,13.4,13.5,13.52/index.html'">
-      <span class="version">13.20 — 13.52</span>
-      <span class="card-title">13.x Host</span>
-      <span class="card-desc">Supported Builds</span>
-      <span class="arrow">‹</span>
-    </button>
-
-    <button class="card card-tools"
-      onmouseenter="setMsg('PS4 9.00 • Tools','JooStore Tools Center')"
-      onmouseleave="resetMsg()"
-      onclick="location.href='900v2/index.html'">
-      <span class="tool-icon">⚙</span>
-      <span class="version">9.00</span>
-      <span class="card-title">Tools Center</span>
-      <span class="card-desc">أدوات الهوست</span>
-      <span class="arrow">‹</span>
-    </button>
-
-  </section>
-
-  <footer>
-    <div>JooStore</div>
-    <div>صيانة البلايستيشن والدراعات • صيانة فورية</div>
-    <div class="footer-right">JooStore PS4 Host</div>
-  </footer>
-
+  <footer>JooStore • PlayStation Service</footer>
 </main>
-
-<script>
-const defaultTitle = "JooStore Host";
-const defaultSub = "صلي على حبيبك النبي ﷺ";
-
-function setMsg(title, sub) {
-  document.getElementById("msgs").textContent = title;
-  document.getElementById("msgs2").textContent = sub;
-}
-
-function resetMsg() {
-  document.getElementById("msgs").textContent = defaultTitle;
-  document.getElementById("msgs2").textContent = defaultSub;
-}
-</script>
 </body>
 </html>
